@@ -1,0 +1,45 @@
+{
+  "weight": "weights/lcdp/stage4/ema_model.safetensors",
+  "sha256": "4282557d0ec03c433f141a1cdf49c366763635a5c0e287cea2f07d8901cde2fe",
+  "test_manifest": "config/manifests/lcdp/test.jsonl",
+  "head": "nearest_rgb3",
+  "fusion": "all_layers",
+  "encoder_type": "dinov2s",
+  "encoder_layers": [
+    1,
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "encoder_input_size": 448,
+  "flow_ratio": 0.5,
+  "time_distribution": [
+    "uniform",
+    0,
+    1.0
+  ],
+  "alpha": 0.9,
+  "cfg_ratio": 0.0,
+  "cfg_scale": 1.0,
+  "adaptive_loss_power": 0.5,
+  "fixed_train_t": 1.0,
+  "t_eps": 0.05,
+  "use_aelq": true,
+  "use_venc": true,
+  "cond_strength_aelq_list": [
+    100.0,
+    0.0
+  ],
+  "weak_cond_strength_aelq_list": [
+    0.99,
+    1.0
+  ],
+  "cond_strength_aelq_test": 1.0,
+  "cond_strength_venc": 1.0,
+  "weak_cond_strength_venc": 1.0,
+  "aug_noise": false,
+  "use_time_shift": false,
+  "time_shift_base_dimension": 4096
+}
